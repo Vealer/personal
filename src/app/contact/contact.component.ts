@@ -57,9 +57,20 @@ export class ContactComponent implements OnInit {
     return this.form.controls;
   }
 
-  onSubmit(): void {
+  async onSubmit(): Promise<void> {
     this.submitted = true;
-    console.log('Fertig');
+    if (this.form.valid) {
+      this.form.disable();
+      let fd = new FormData();
+      fd.append('name',this.form.value.name);
+      fd.append('message',this.form.value.message);
+      fd.append('email',this.form.value.email);
+      await fetch('https://valer-neufeld.developerakademie.net/send_mail/send_mail.php',{
+        method: 'POST',
+        body: fd
+      });
+      this.form.enable();
+    }
 
     if (this.form.invalid) {
       return;
