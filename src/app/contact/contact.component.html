@@ -1,0 +1,65 @@
+<section class="contact" id="contact">
+  <h1>{{ text1 }}</h1>
+  <p>
+    {{ text2 }} <a href="mailto:valer.neufeld@gmx.de"> valer.neufeld@gmx.de</a>
+  </p>
+
+  <div class="register-form">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label>Name</label>
+        <input
+          type="text"
+          formControlName="username"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f['username'].errors }"
+        />
+        <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+          <div *ngIf="f['username'].errors['required'] && english">Name is required</div>
+          <div *ngIf="f['username'].errors['required'] && !english">Name ist erforderlich</div>
+          <div *ngIf="f['username'].errors['minlength'] && english">Username must be at least 6 characters</div>
+          <div *ngIf="f['username'].errors['minlength'] && !english">Mindestens 6 Zeichen</div>
+          <div *ngIf="f['username'].errors['pattern'] && english">Only Letters allow.</div>
+          <div *ngIf="f['username'].errors['pattern'] && !english">Nur Buchstaben erlaubt</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input
+          type="text"
+          formControlName="email"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+        />
+        <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+          <div *ngIf="f['email'].errors['required'] && english">Email is required</div>
+          <div *ngIf="f['email'].errors['required'] && !english">Email ist erforderlich</div>
+          <div *ngIf="f['email'].errors['pattern'] && english">Email is invalid</div>
+          <div *ngIf="f['email'].errors['pattern'] && !english">Email hat ungültiges Format</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>{{ text3 }}</label>
+        <textarea
+          type="text"
+          formControlName="message"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f['message'].errors }"
+        ></textarea>
+    <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+      <div *ngIf="f['message'].errors['required'] && english">Message is required</div>
+      <div *ngIf="f['message'].errors['required'] && !english">Dieses Feld muss gefüllt sein</div>
+      <div *ngIf="f['message'].errors['minlength'] && english">Message must be at least 6 characters</div>
+      <div *ngIf="f['message'].errors['minlength'] && !english">Gib mindestens 6 Zeichen ein</div>
+    </div>
+    
+      </div>
+
+      <div class="form-group">
+      <button type="submit"><span class="text">{{ text4 }}</span></button>
+      </div>
+    </form>
+  </div>
+</section>

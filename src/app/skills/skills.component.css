@@ -1,0 +1,61 @@
+.skills {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  border-top: 1px solid white;
+  min-height: 100vh;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  align-self: flex-start;
+  margin-left: 50px;
+  margin-top: 80px;
+  color: white;
+
+}
+
+.cards{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  width: 60%;
+}
+
+.card{
+  height: 130px;
+  width: 220px;
+  background: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid rgba(93, 58, 133, 0.3);
+  
+}
+
+p{
+  font-size: 18px !Important;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -60px;
+  margin-bottom: 10px;
+  box-shadow: rgb(135, 143, 150) 0px 20px 30px -10px;
+}

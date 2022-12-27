@@ -1,0 +1,33 @@
+nav{
+  z-index: 100;
+  width: 100%;
+  background-color: #215b94;
+  background: linear-gradient( rgb(67, 67, 156), rgb(16, 16, 83) );
+  padding: 2px;
+  position: fixed;
+  color: white !important;
+  top: 0;
+}
+
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border: 1px solid;
+    border-color: rgba(255,255,255,.1);
+    background: rgba(189, 193, 201, 0.2);
+}
+
+a{
+  color: unset !important;
+}
+a:hover{
+  transition: all 1s ease-in-out !important;
+}
+
+img{
+  height: 64px;
+}
+
+button{
+  background-color: rgb(16, 16, 83);
+}

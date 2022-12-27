@@ -1,0 +1,127 @@
+.projects{
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid white;
+  margin-bottom: 50px;
+  min-height: 100vh;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  align-self: flex-start;
+  margin-left: 50px;
+  margin-top: 80px;
+  color: white;
+}
+
+.cards{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.card{
+  height: 300px;
+  width: 350px;
+  background: rgba(241, 236, 236, 0.9);
+  box-shadow: rgb(135, 143, 150) 0px 20px 30px -10px;
+  animation: bounce 2s ease-in-out;
+}
+
+.red{
+  border-bottom: 4px solid red;
+}
+
+.blue{
+  border-bottom: 4px solid rgb(15, 69, 216);
+}
+
+.green{
+  border-bottom: 4px solid rgb(68, 101, 141);
+}
+
+.orange{
+  border-bottom: 4px solid orange;
+}
+
+.red-color{
+  color: red;
+}
+.blue-color{
+  color: rgb(84, 123, 228);
+}
+
+.green-color{
+  color: rgb(68, 101, 141);
+}
+
+.orange-color{
+  color: rgb(192, 138, 21);
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  height: 230px;
+  width: 100%;
+}
+a:hover{
+  border-bottom: none;
+}
+
+
+p{
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes bounce{
+  0%{
+    transform: translateY(15px);
+  }
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(28, 5, 112, 0.25);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  filter: brightness(1.2);
+}
+
+.text {
+  white-space: nowrap; 
+  border: 1px solid white;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}

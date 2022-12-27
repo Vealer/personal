@@ -1,0 +1,98 @@
+.about {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid white;
+  margin-bottom: 50px;
+  min-height: 100vh;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutMe {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 70px;
+}
+
+.journey {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  text-align: center;
+  width: 80%;
+ 
+}
+
+.journey div{
+  box-sizing: border-box;
+  width: 100%;
+  background: rgb(0,0,0,0.15);
+  padding: 15px;
+  border-radius: 21px;
+}
+
+.journey img {
+  background-color: white;
+  height: 92px;
+  width: 92px;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+span {
+  margin-top: 100px;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.profil {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+h1 {
+  align-self: flex-start;
+  margin-top: 80px;
+  margin-left: 50px;
+  color: white;
+}
+
+h5 {
+  color: lightblue;
+  height: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutMe {
+    flex-direction: column;
+    align-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .journey {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  h5 {
+    height: 30px;
+  }
+}

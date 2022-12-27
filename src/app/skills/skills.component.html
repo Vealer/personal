@@ -1,0 +1,9 @@
+<section class="skills" id="skills">
+  <h1>{{ text1 }}</h1>
+  <div class="cards">
+    <div class="card"  *ngFor='let card of cards'>
+      <img [src]="card.src">
+      <p><strong>{{ card.name }}</strong></p>
+    </div>
+  </div>
+</section>

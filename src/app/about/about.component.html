@@ -1,0 +1,20 @@
+<section class="about" id="about">
+  <h1>{{ text1 }}</h1>
+  <div class="aboutMe">
+    <img class="profil" src="/assets/js.png" />
+    <p>
+      {{ text2 }}
+    </p>
+  </div>
+  <div class="journey">
+    <div *ngFor="let element of journey">
+      <img [src]="element.src" />
+      <h5>
+        {{ english ? element.title.toUpperCase() : element.titel.toUpperCase() }}
+      </h5>
+      <span>
+        {{ english ? element.english : element.deutsch }}
+      </span>
+    </div>
+  </div>
+</section>
