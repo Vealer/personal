@@ -52,6 +52,10 @@ h1{
   border-bottom: 4px solid orange;
 }
 
+.purple{
+  border-bottom: 4px solid purple;
+}
+
 .red-color{
   color: red;
 }
@@ -65,6 +69,10 @@ h1{
 
 .orange-color{
   color: rgb(192, 138, 21);
+}
+
+.purple-color{
+  color: purple;
 }
 
 img{

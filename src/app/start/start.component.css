@@ -3,7 +3,6 @@
   margin: 0;
   color: white;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
   font-family: 'Indie' !important;
@@ -57,6 +56,21 @@ i{
   text-shadow: -8px 10px rgba(8, 8, 8, 0.28) ;
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profil {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: white;
+  object-fit: cover;
+}
+
 @keyframes bounce-1{
   50%{
     transform: translateY(-15px);
@@ -76,5 +90,12 @@ i{
     transform: translate(10px, -50px);
     letter-spacing: 10;
 
+  }
+}
+
+@media (max-width: 768px) {
+  .profil{
+    width: 250px;
+    height: 250px;
   }
 }

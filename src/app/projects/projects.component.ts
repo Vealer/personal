@@ -28,6 +28,7 @@ export class ProjectsComponent implements OnInit {
   text4: string = '';
   text5: string = '';
   text6: string = '';
+  text7: string = '';
 
   changeText() {
     let en: boolean = this.english;
@@ -37,6 +38,7 @@ export class ProjectsComponent implements OnInit {
     this.text4 = en ? `A socialmedia clone` : `Eine Instagram Kopie`;
     this.text5 = en ? `A game, written with Angular` : `Ein Kartenspiel in Angular`;
     this.text6 = en ? `Open project` : `Projekt öffnen!`;
+    this.text7 = en ? `A chat page, written in Angular` : `Eine Chatseite in Angular`;
     
   }
 

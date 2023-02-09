@@ -1,5 +1,5 @@
 .contact{
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   display: flex;
   align-items: center;
@@ -23,6 +23,7 @@ form{
   margin-left: 15px;
   box-sizing: border-box;
   border-radius: 10px;
+  width: 500px;
 }
 
 
