@@ -25,7 +25,6 @@ export class ProjectsComponent implements OnInit {
   text1: string = '';
   text2: string = '';
   text3: string = '';
-  text4: string = '';
   text5: string = '';
   text6: string = '';
   text7: string = '';
@@ -35,7 +34,6 @@ export class ProjectsComponent implements OnInit {
     this.text1 = en ? `My` : `Mein`;
     this.text2 = en ? `A jump & run game` : `Ein jump & run Spiel`;
     this.text3 = en ? `A canban group project` : `Eine Kanban Gruppenarbeit`;
-    this.text4 = en ? `A socialmedia clone` : `Eine Instagram Kopie`;
     this.text5 = en ? `A game, written with Angular` : `Ein Kartenspiel in Angular`;
     this.text6 = en ? `Open project` : `Projekt öffnen!`;
     this.text7 = en ? `A chat page, written in Angular` : `Eine Chatseite in Angular`;
