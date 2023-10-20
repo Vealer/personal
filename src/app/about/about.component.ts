@@ -14,31 +14,31 @@ export class AboutComponent implements OnInit {
   journey = [
     {
       src: 'assets/walking.png',
-      title: 'The JOURNEY began',
-      titel: 'Die Reise began',
-      english: 'I started programming as a hobby a few years ago and I still enjoy programming immensely.',
-      deutsch: 'Vor ein paar Jahren fing ich mit dem programmieren als Hobby an. Bis heute programmiere ich sehr gerne.',
+      title: 'Education',
+      titel: 'Bildung',
+      english: 'I studied mechanical engineering and have been working in software development for over 10 years. My background allows me to look at technical challenges from different perspectives and develop innovative solutions.',
+      deutsch: 'Ich habe Maschinenbau studiert und arbeite seit über 10 Jahren in der Softwareentwicklung. Mein Hintergrund ermöglicht es mir, technische Herausforderungen aus verschiedenen Perspektiven zu betrachten und innovative Lösungen zu entwickeln.',
     },
     {
       src: 'assets/heart.png',
-      title: 'Become pleasures',
-      titel: 'Interesse erwachte',
-      english: 'I really enjoy developing software. For this reason I want to turn my hobby into my profession.',
-      deutsch: 'Mein Interesse an Software-Entwicklung erwachte. Mir wurde klar, dass ich mehr wollte.',
+      title: 'Pleasures',
+      titel: 'Interesse',
+      english: 'With strong analytical skills, I am good at solving problems. In my spare time, I enjoy solving puzzles and am passionate about playing chess, which further strengthens my problem-solving skills.',
+      deutsch: 'Mit starken analytischen Fähigkeiten bin ich gut darin, Probleme zu lösen. In meiner Freizeit löse ich gerne Rätsel und spiele leidenschaftlich gerne Schach, was meine Problemlösungsfähigkeiten weiter stärkt.',
     },
     {
       src: 'assets/lupe.png',
       title: 'Search for more',
       titel: 'Suche nach mehr',
-      english: 'I realized I wanted more. I wanted to turn my hobby into my job. So I went looking and found the Developer Academy.',
-      deutsch: ' Ich wollte mein Hobby zum Beruf machen. Also habe ich mich auf die Suche gemacht und die Developer Academy gefunden.',
+      english: 'In addition to my main job, I have completed further training to become a web developer, as I use Javascript professionally and it has become my passion to program with it.',
+      deutsch: 'Zusätzlich zu meiner Haupttätigkeit habe ich eine Weiterbildung zum Webdeveloper absolviert, da ich beruflich Javascript nutze und es meine Leidenschaft geworden ist, damit zu programmieren. ',
     },
     {
       src: 'assets/takeoff.png',
       title: 'Ready to takeoff',
-      titel: 'Bereit zu starten',
-      english: 'I am now looking for new challenges to work as a Front End developer or build software with JavaScript.',
-      deutsch: 'Ich suche jetzt nach neuen Herausforderungen, um als Frontend-Entwickler zu arbeiten oder Software mit JavaScript zu erstellen.',
+      titel: 'Bereit für Neues',
+      english: 'I am looking for a new challenge in the areas of software development or automation that will allow me to fully utilize my acquired skills and knowledge.',
+      deutsch: 'Ich strebe nach einer neuen Herausforderung in den Bereichen Softwareentwicklung oder Automatisierung, die mir ermöglicht, meine erworbenen Fähigkeiten und Kenntnisse vollständig einzusetzen. ',
     },
   ];
 
@@ -62,7 +62,6 @@ export class AboutComponent implements OnInit {
       ? `In April 2022, I decided to use my interest in the IT sector
     professionally. So I started further training at the Developer Academy. 
     I'm working hard to make my dream come true, to turn my hobby into a job.`
-      : `Im April 2022 began ich mein Interesse an der IT zu vertiefen. Deswegen habe ich privat eine Weiterbildung zum Webentwickler an der Developer Academy begonnen. 
-    Ich arbeite regelmäßig daran, meinen Traum zu verwirklichen und mein Hobby zum Beruf zu machen.`;
+      : `Im April 2022 habe ich beschlossen, meine Fähigkeiten im Bereich der IT zu vertiefen. Um mein Ziel zu erreichen, habe ich mich für eine private Weiterbildung zum Webentwickler an der Developer Academy entschieden. Seitdem arbeite ich hart und konzentriert daran, meine Kenntnisse und Fertigkeiten zu verbessern.`;
   }
 }

@@ -1,8 +1,7 @@
 nav{
   z-index: 100;
   width: 100%;
-  background-color: #215b94;
-  background: linear-gradient( rgb(67, 67, 156), rgb(16, 16, 83) );
+  background: linear-gradient( rgb(38, 38, 39), rgba(44, 44, 44, 0.99) );
   padding: 2px;
   position: fixed;
   color: white !important;

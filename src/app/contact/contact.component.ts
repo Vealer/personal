@@ -62,10 +62,10 @@ export class ContactComponent implements OnInit {
     if (this.form.valid) {
       this.form.disable();
       let fd = new FormData();
-      fd.append('name',this.form.value.name);
+      fd.append('name',this.form.value.username);
       fd.append('message',this.form.value.message);
       fd.append('email',this.form.value.email);
-      await fetch('https://valer-neufeld.developerakademie.net/send_mail/send_mail.php',{
+      await fetch('https://valer-developer.de/send_mail/send_mail.php',{
         method: 'POST',
         body: fd
       });

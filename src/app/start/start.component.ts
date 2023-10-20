@@ -24,7 +24,9 @@ export class StartComponent implements OnInit {
     this.text1 = en ? `Hi! I'm Val` : `Hi! Ich bin Val`;
     this.text2 = en ? `a w` : `ein W`;
     this.text3 = en ? `develop` : `Entwickl`;
-    this.text4 = en ? `Frontend developer` : `Frontend Entwickler`;
+    this.text4 = en ? `"Welcome to my website! Here I would like to introduce myself as a passionate web developer and give you an insight into my work and skills. I invite you to learn more about my projects and my way of working."` : `
+    "Herzlich willkommen auf meiner Webseite! Hier möchte ich mich als leidenschaftlicher Web Entwickler vorstellen und Ihnen einen Einblick in meine Arbeit und meine Fähigkeiten geben. 
+     Ich lade Sie herzlich ein, mehr über meine Projekte und meine Arbeitsweise zu erfahren."`;
     this.text5 = en ? `Scroll down!` : `runterscrollen`;
   }
 
