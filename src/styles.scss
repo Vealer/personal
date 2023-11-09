@@ -24,11 +24,15 @@
 
 body {
   margin: 0;
-  background-image: url("../src/assets/background.png");
+  background-image: url("../src/assets/background-light.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(128, 128, 128, 0.5);
   background-attachment: fixed;
+}
+
+img.background {
+  filter: blur(10px);
 }
 
 .container {
@@ -103,10 +107,10 @@ button {
 ::-webkit-scrollbar {
   width: 5px;
   height: 6px;
-  background-color: rgb(63, 4, 117, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(42, 0, 139);
+  background: rgb(0, 0, 0);
   border-radius: 5px;
 }

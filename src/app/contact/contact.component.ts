@@ -69,6 +69,8 @@ export class ContactComponent implements OnInit {
         method: 'POST',
         body: fd
       });
+      this.form.get('message')?.setValue('      ');
+      this.text2 ="Email wurde erfolgreich gesendet!";
       this.form.enable();
     }
 
@@ -88,7 +90,7 @@ export class ContactComponent implements OnInit {
   changeText() {
     let en: boolean = this.english;
     this.text1 = en ? `Contact me` : `Kontakt`;
-    this.text2 = en ? `Get in touch via the form below, or by emailing` : `Kontaktieren Sie mich über das unten stehende Formular oder per E-Mail: `;
+    this.text2 = ` `;
     this.text3 = en ? `Message` : `Nachricht`;
     this.text4 = en ? `Send message` : `Nachricht senden`;
   }
